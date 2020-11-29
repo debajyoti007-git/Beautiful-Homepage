@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container"></div>
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="http://google.com">Google</a>
+                </div>
+            </div>  
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>DETROIT</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/andre-tan-ssRRLP1ij5M-unsplash.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/car-logo.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Build cars, modify them, add accessories to convert your car into a dream car 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/code-img-2.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/code-logo-2.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Any fool can write code that a computer can understand. Good programmers write code that humans can understand
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/city-img.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/city-logo.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            There’s something about arriving in new cities, wandering empty streets with no destination. I will never lose the love for the arriving, but I'm born to leave
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/code-img.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/code-logo.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Truth can only be found in one place: the code.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/food-img.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/food-logo.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            The secret of success in life is to eat what you like and let the food fight it out inside.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/night-img.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/night-logo.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            The darker the night, the brighter the stars, the deeper the grief, the closer is God! 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</body>   
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        });
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        });
+    });
+</script>  
+</html>
